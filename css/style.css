@@ -39,6 +39,11 @@ a{
     align-items: center;
     flex-wrap: nowrap;
 }
+.flexcol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 /* !COMMON  */
@@ -114,14 +119,12 @@ a{
 
 .song,
 .volume{
-    border: solid white 1px;
     width: calc(100% / 3);
     max-width: 250px;
     min-width: 180px;
 }
 .command{
     width: 100%;
-    border: solid white 3px;
 }
 
 .song-left img{
@@ -131,24 +134,22 @@ a{
 }
 
 
-
-
 /* ------------- */
 
 .volume-bar{
     display: inline-block;
     padding-bottom: 8px;
 }
-.line-white{
+.vol-white{
     width: 40px;
-    height: 2px;
+    height: 4px;
     background-color: white;
     border-radius: 10px;
     display: inline-block;
 }
-.line-grey{
+.vol-grey{
     width: 60px;
-    height: 2px;
+    height: 4px;
     background-color: rgb(157, 157, 157);
     border-radius: 10px;
     display: inline-block;
@@ -156,11 +157,37 @@ a{
 .volume-icon i{
     padding: 2px;
 }
-
-
-
-
-
+.time-white{
+    width: 20%;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+.time-grey{
+    width: 50%;
+    height: 4px;
+    background-color: rgb(157, 157, 157);
+    border-radius: 10px;
+    display: inline-block;
+}
+#real-time{
+    padding-right: 15px;
+    font-size: 0.8rem;
+}
+#total-time{
+    padding-left: 15px;
+    font-size: 0.8rem;
+}
+.command-icon{
+    padding-bottom: 10px;
+}
+.command-icon i{
+    padding: 0px 10px;
+}
+.fa-circle-play{
+    font-size: 2rem;
+}
 
 .playlist{
     padding-top: 20px;
@@ -230,10 +257,12 @@ a{
     .song-right{
         display: flex;
         flex-direction: column;
-
     }
     .song{
         min-width: 140px ;
+    }
+    .song-right i{
+        padding-right: 5px;
     }
     .song-right i:last-child{
         padding-left: 0;
