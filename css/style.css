@@ -23,11 +23,21 @@ a{
 .flex{
     display: flex;
 }
+
 .overflow{
     overflow: auto;
 }
 .relative{
     position: relative;
+}
+.space-bet{
+    justify-content: space-between;
+    align-items: center;
+}
+.space-around{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 
@@ -89,6 +99,69 @@ a{
     width: 20px;
     
 }
+/* /NAV */
+
+/* HEADER */
+.flex-upgrade{
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+/* /HEADER */
+
+/* PLAYER */
+
+.song,
+.volume{
+    border: solid white 1px;
+    width: calc(100% / 3);
+    max-width: 250px;
+    min-width: 180px;
+}
+.command{
+    width: 100%;
+    border: solid white 3px;
+}
+
+.song-left img{
+    width: 50px;
+    padding: 0 5px;
+    vertical-align: middle;  
+}
+
+
+
+
+/* ------------- */
+
+.volume-bar{
+    display: inline-block;
+    padding-bottom: 8px;
+}
+.line-white{
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+.line-grey{
+    width: 60px;
+    height: 2px;
+    background-color: rgb(157, 157, 157);
+    border-radius: 10px;
+    display: inline-block;
+}
+.volume-icon i{
+    padding: 2px;
+}
+
+
+
+
+
+
 .playlist{
     padding-top: 20px;
     padding-left: 5px;
@@ -101,17 +174,36 @@ a{
     padding-left: 5px ;
     position: absolute;
     bottom:5px;
-    left: 10px;
+    left: 8px;
 
 }
 .account hr{
-    width: 150%;
+    width: 130%;
     margin: 10px 0;     
 }
 
 
 
 /* !TYPOGRAPHY */
+/* header */
+.upgrade{
+    font-size: 0.8rem;
+    border: solid 2px white;
+    border-radius: 50px;
+    padding: 0.8rem 2.5rem; 
+    display: inline-block;
+}
+
+/* nav */
+.song-info,
+.volume{
+    font-size: 0.8rem;
+}
+.song-right,
+.song-right i:last-child{
+    padding-left: 3px;
+    font-size: 1rem;
+}
 
 
 
@@ -135,7 +227,19 @@ a{
         flex-direction: column;
         justify-content: space-between;
     }
-    
+    .song-right{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .song{
+        min-width: 140px ;
+    }
+    .song-right i:last-child{
+        padding-left: 0;
+        padding-top: 5px;
+    }
+   
 
 
 
