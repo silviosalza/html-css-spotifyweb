@@ -62,18 +62,18 @@ a{
 }
 .nav{
     background-color: black;
-    width: 150px;
+    width: 180px;
     height: 100%;
 }
 .main{
     background-color: rgb(27, 27, 36);
-    width: calc(100% - 150px);
+    width: calc(100% - 180px);
     height: 100%;
     padding-top: 100px;
 }
 .header{
     background-color: rgb(0, 0, 0, 0.5);
-    width: calc(100% - 150px);
+    width: calc(100% - 180px);
     height: 80px;
     position: fixed;
     right: 0;
@@ -101,8 +101,68 @@ a{
     padding-left: 5px;
 }
 .nav-option img{
-    width: 20px;
-    
+    width: 30px;
+    padding-right:5px;  
+}
+.nav-option a{
+    padding-bottom: 15px;
+}
+.nav-option img,
+.nav-option span{
+    vertical-align: middle;
+}
+.playlist{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+.playlist ul{
+    padding: 1rem 0;
+}
+
+.playlist li:first-child{
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+.playlist i{
+    font-size: 2.5rem;
+    vertical-align: middle;
+}
+
+.playlist li,
+.nav-option li{
+    line-height: 2rem;
+    font-size: 0.8rem;
+}
+#profile{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    background-color: rgb(129, 129, 129);
+    border-radius: 50%;
+    margin-left: 4px;
+}
+#download{
+    width: 25px;
+    vertical-align: middle;
+
+}
+#app{
+    font-size: 0.8rem;
+
+}
+.account span{
+    padding-left: 10px;
+}
+
+.account{
+    width: 180px;
+    position: absolute;
+    bottom:5px;
+    left: 5px;
+}
+.account hr{
+    width: 80%;
+    margin: 10px 0;     
 }
 /* /NAV */
 
@@ -189,26 +249,6 @@ a{
     font-size: 2rem;
 }
 
-.playlist{
-    padding-top: 20px;
-    padding-left: 5px;
-}
-.playlist li,
-.nav-option li{
-    line-height: 2rem;
-}
-.account{
-    padding-left: 5px ;
-    position: absolute;
-    bottom:5px;
-    left: 8px;
-
-}
-.account hr{
-    width: 130%;
-    margin: 10px 0;     
-}
-
 
 
 /* !TYPOGRAPHY */
@@ -268,10 +308,6 @@ a{
         padding-left: 0;
         padding-top: 5px;
     }
-   
-
-
-
     .main{
         width: calc(100% - 40px);
     }
