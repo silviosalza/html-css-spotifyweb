@@ -347,7 +347,7 @@ a{
         
         .album-list{
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
         }
     
 }
@@ -360,6 +360,7 @@ a{
     }
 }
 @media screen and (max-width:600px) {
+    
     .nav-option,
     .nav .logo,
     .playlist,
