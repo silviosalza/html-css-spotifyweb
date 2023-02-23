@@ -44,7 +44,9 @@ a{
     flex-direction: column;
     justify-content: center;
 }
-
+.space-even{
+    justify-content: space-evenly;
+}
 
 /* !COMMON  */
 .wrapper{
@@ -179,15 +181,31 @@ a{
 /* /HEADER */
 
 /* *MAIN CONTENT ALBUMS */
+.main-nav{
+    text-align: center;
+    font-size: 0.7rem;
+    color: #a7a7a7;
+    padding-bottom: 20px;
 
+}
+.main-nav span{
+    padding: 0 10px;
+    display: inline-block;
+}
 .album-list{
     display: flex;
     flex-wrap: nowrap;
+    width: 100%;
+    padding-left: 20px;
+}
+.main h2{
+    padding-left: 20px;
 }
 .album{
     width: 200px;
-    padding: 0 1%;
+    padding: 20px 10px 20px 0;
 }
+
 
 
 
@@ -289,7 +307,16 @@ a{
     display: inline-block;
 }
 
-/* nav bar */
+/* album section */
+.main-title{
+    font-weight: 700 ;
+    padding-bottom: 5px;
+}
+.main-title,
+.subtitle{
+    font-size: 0.8rem;
+    text-align: center;
+}
 
 
 /* player */
@@ -316,6 +343,23 @@ a{
 
 /* !MEDIA QUERY */
 
+
+@media screen and (max-width:1100px) {
+        
+        .album-list{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    
+}
+
+@media screen and (max-width:700px) {
+        
+    .album-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 @media screen and (max-width:600px) {
     .nav-option,
     .nav .logo,
@@ -352,15 +396,4 @@ a{
     .header{
         width: calc(100% - 40px);
     }
-}
-
-@media screen and (max-width:1100px) {
-        .album{
-            min-width: 120px;
-        }
-        .album-list{
-            display: flex;
-            flex-wrap: wrap;
-        }
-    
 }
