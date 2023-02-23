@@ -25,7 +25,7 @@ a{
 }
 
 .overflow{
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .relative{
     position: relative;
@@ -44,10 +44,6 @@ a{
     flex-direction: column;
     justify-content: center;
 }
-.flex-wrap{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 
 /* !COMMON  */
@@ -61,6 +57,8 @@ a{
 }
 .player{
     position: fixed;
+    bottom: 0;
+    left: 0;
     background-color: #282828;
     height: 100px;
     width: 100%;
@@ -75,6 +73,7 @@ a{
     width: calc(100% - 180px);
     height: 100%;
     padding-top: 100px;
+    
 }
 .header{
     background-color: rgb(0, 0, 0, 0.5);
@@ -181,7 +180,14 @@ a{
 
 /* *MAIN CONTENT ALBUMS */
 
-
+.album-list{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.album{
+    width: 200px;
+    padding: 0 1%;
+}
 
 
 
@@ -346,5 +352,15 @@ a{
     .header{
         width: calc(100% - 40px);
     }
+}
 
+@media screen and (max-width:1100px) {
+        .album{
+            min-width: 120px;
+        }
+        .album-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
 }
