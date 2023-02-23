@@ -22,14 +22,14 @@
                 <!-- mobile nav bar -->
                 <div class="nav-xs">
                     <div class="top-icons">
-                        <img src="./img/logo-small.svg" alt="">
-                        <img src="./img/home.svg" alt="">
-                        <img src="./img/search.svg" alt="">
-                        <img src="./img/libreria.svg" alt="">
+                        <a href=""><img src="./img/logo-small.svg" alt=""></a>
+                        <a href=""><img src="./img/home.svg" alt=""></a>
+                        <a href=""><img src="./img/search.svg" alt=""></a>
+                        <a href=""><img src="./img/libreria.svg" alt=""></a>
                     </div>
                     <div class="bottom-icons">
-                        <img src="./img/download.svg" alt="">
-                        <img src="./img/profile.svg" alt="">
+                        <a href=""><img src="./img/download.svg" alt=""></a>
+                        <a href=""><img id="profile" src="./img/profile.svg" alt=""></a>
                     </div>
                 </div>
                     <!-- /mobile nav bar --> 
@@ -37,21 +37,26 @@
                      <!--normal nav bar  -->
                 <img class="logo" src="./img/logo.svg" alt="">
                 <section class="nav-option flexcol">
-                    <a href=""><img src="./img/home.svg" alt=""><span>Home</span></a>
-                    <a href=""><img src="./img/search.svg" alt=""><span>Cerca</span></a>
-                    <a href=""><img src="./img/libreria.svg" alt=""><span>Libreria</span></a>
+                    <div>
+                        <a href=""><img src="./img/home.svg" alt=""><span>Home</span></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="./img/search.svg" alt=""><span>Cerca</span></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="./img/libreria.svg" alt=""><span>Libreria</span></a>
+                    </div>
                 </section>
                 <div class="playlist">
                     <h4>PLAYLIST</h4>
                     <ul>
-                        <li><i class="fa-solid fa-square-plus"></i> Crea Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+                        <li><a href=""><i class="fa-solid fa-square-plus"></i> Crea Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
                     </ul>
                 </div>
                 <div class="account">
@@ -64,17 +69,33 @@
 
             
             </div>
-            <!-- main content - albums ecc -->
+            <!-- main content -->
             <div class="main overflow">
                 <!-- header -->
                 <div class="header">
                     <div class="flex-upgrade">
                         <a class="upgrade" href="">EFFETTUA L'UPGRADE</a>
                     </div>
-                </div>
                 <!-- /header -->
-
-
+                <!-- albums ecc -->
+                
+                    <h2>Recently played</h2>
+                    <div class="albums-list flex-wrap">
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                        <div class="album"><img src="./img/mixdaily.jpeg" alt=""></div>
+                    </div>
+                    
+                </div>
             </div>
 
  
@@ -86,8 +107,8 @@
                 <div class="song-left flex space-around">
                     <img src="./img/sinister.jpeg" alt="">
                     <div class="song-info">
-                        <div id="name-artist">Sinister</div>
-                        <div id="name-song">Nome Brano</div>
+                        <div id="name-artist"><a href="">Sinister</a></div>
+                        <div id="name-song"><a href="">Nome Brano</a></div>
                     </div>
                 </div>
                 <div class="song-right">
@@ -119,7 +140,7 @@
                     <i class="fa-solid fa-volume-high"></i>
                 </div>
                 <div class="volume-bar">
-                    <div class="vol-white "></div><div class="vol-grey"></div>
+                    <span class="vol-white "></span><span class="vol-grey"></span>
                 </div>
 
             </div>

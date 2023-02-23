@@ -25,7 +25,7 @@ a{
 }
 
 .overflow{
-    overflow: auto;
+    overflow-y: scroll;
 }
 .relative{
     position: relative;
@@ -44,6 +44,10 @@ a{
     flex-direction: column;
     justify-content: center;
 }
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /* !COMMON  */
@@ -56,6 +60,7 @@ a{
     height: calc(100% - 100px);
 }
 .player{
+    position: fixed;
     background-color: #282828;
     height: 100px;
     width: 100%;
@@ -104,7 +109,7 @@ a{
     width: 30px;
     padding-right:5px;  
 }
-.nav-option a{
+.nav-option div{
     padding-bottom: 15px;
 }
 .nav-option img,
@@ -128,8 +133,7 @@ a{
     vertical-align: middle;
 }
 
-.playlist li,
-.nav-option li{
+.playlist li{
     line-height: 2rem;
     font-size: 0.8rem;
 }
@@ -174,6 +178,26 @@ a{
     align-items: center;
 }
 /* /HEADER */
+
+/* *MAIN CONTENT ALBUMS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PLAYER */
 
@@ -249,8 +273,6 @@ a{
     font-size: 2rem;
 }
 
-
-
 /* !TYPOGRAPHY */
 /* header */
 .upgrade{
@@ -261,7 +283,10 @@ a{
     display: inline-block;
 }
 
-/* nav */
+/* nav bar */
+
+
+/* player */
 .song-info,
 .volume{
     font-size: 0.8rem;
@@ -271,12 +296,19 @@ a{
     padding-left: 3px;
     font-size: 1rem;
 }
+#name-song,
+.song-right,
+.playlist li,
+.nav-option{
+    color: #a7a7a7;
+}
+#name-artist{
+    font-weight: 700;
+}
 
 
 
 /* !MEDIA QUERY */
-
-
 
 @media screen and (max-width:600px) {
     .nav-option,
