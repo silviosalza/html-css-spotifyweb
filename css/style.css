@@ -100,11 +100,11 @@ a{
 .logo{
     width: 90%;
     padding-top: 20px;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 .nav-option{
     padding-top: 20px;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 .nav-option img{
     width: 30px;
@@ -119,7 +119,7 @@ a{
 }
 .playlist{
     padding-top: 20px;
-    padding-left: 5px;
+    padding-left: 15px;
 }
 .playlist ul{
     padding: 1rem 0;
@@ -163,7 +163,7 @@ a{
     width: 180px;
     position: absolute;
     bottom:5px;
-    left: 5px;
+    left: 15px;
 }
 .account hr{
     width: 80%;
@@ -177,6 +177,7 @@ a{
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-right: 30px;
 }
 /* /HEADER */
 
@@ -205,6 +206,8 @@ a{
     padding: 20px 10px 20px 0;
 }
 
+
+
 /* PLAYER */
 
 .song,
@@ -228,7 +231,7 @@ a{
 
 .volume-bar{
     display: inline-block;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 }
 .vol-white{
     width: 40px;
@@ -260,6 +263,18 @@ a{
     background-color: rgb(157, 157, 157);
     border-radius: 10px;
     display: inline-block;
+}
+.vol-circle{
+    position: absolute;
+    left: calc(100% / 3);
+    top: 4px;
+    filter: opacity(0);
+
+}
+.circle-time{
+    position: absolute;
+    left: calc(100% / 3);
+    filter: opacity(0);
 }
 #real-time{
     padding-right: 15px;
@@ -380,3 +395,45 @@ a{
         width: calc(100% - 40px);
     }
 }
+
+/* !HOVER */
+
+.upgrade:hover{
+    background-color: #1DD760;
+    font-weight: 700;
+    color: black;
+    border: solid 2px white;
+    border-radius: 50px;
+    padding: 0.8rem 2.5rem; 
+    display: inline-block;  
+    transform: scale(115%); 
+    transition-duration: 0.5s;
+}
+.nav-option a:hover,
+.playlist a:hover,
+#name-song:hover,
+.main-nav span:hover{
+    color: white;
+}
+
+.command-icon i:hover,
+.volume-icon i:hover,
+.song-right i:hover,
+.account a:hover{
+    color: #1DD760;
+}
+.time-bar:hover .time-white,
+.volume-bar:hover .vol-white{
+    background-color: #1DD760;
+}
+
+.nav-option a:hover{
+    border-left: #1DD760 solid 4px;
+    padding-left: 25px;
+}
+.time-bar:hover .circle-time,
+.volume-bar:hover .vol-circle{
+    filter: opacity(100);
+}
+
+
