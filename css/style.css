@@ -195,33 +195,15 @@ a{
 .album-list{
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
     padding-left: 20px;
 }
 .main h2{
     padding-left: 20px;
 }
 .album{
-    width: 200px;
+    width: calc(100% / 6);
     padding: 20px 10px 20px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* PLAYER */
 
@@ -348,16 +330,17 @@ a{
         .album-list{
             display: flex;
             flex-wrap: wrap;
+        } 
+        .album{
+            width: calc(100% / 4);  
         }
-    
 }
 
 @media screen and (max-width:700px) {
-        
-    .album-list{
-        display: flex;
-        flex-wrap: wrap;
+    .album{
+        width: calc(100% / 2);  
     }
+          
 }
 @media screen and (max-width:600px) {
     
