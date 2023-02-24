@@ -495,8 +495,8 @@ a{
     display: block;
 
 }
-.album:hover{
-    filter: grayscale(50%);
+.album:hover img{
+    filter: brightness(40%);
     transform: scale(105%);
 }
 .album-hov:hover i{
