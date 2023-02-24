@@ -46,6 +46,14 @@ a{
 }
 .space-even{
     justify-content: space-evenly;
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
 }
 
 /* !COMMON  */
@@ -187,12 +195,12 @@ a{
     font-size: 0.7rem;
     color: #a7a7a7;
     padding-bottom: 20px;
+}
 
+.main-nav div{
+    padding: 0 10px;  
 }
-.main-nav span{
-    padding: 0 10px;
-    display: inline-block;
-}
+
 .album-list{
     display: flex;
     flex-wrap: nowrap;
@@ -452,8 +460,29 @@ a{
     display: none;
 }
 
+.pseudoelem2{
+    position: absolute;
+    bottom: -5;
+    left: 30%;
+    width: 30px;
+    height: 1px;
+    background-color: #1DD760;
+    display: none;
+}
+
+
 .home:hover .pseudoelem,
 .search:hover .pseudoelem,
 .library:hover .pseudoelem{
     display: block;
+}
+
+.focus:hover .pseudoelem2,
+.podcast:hover .pseudoelem2,
+.chart:hover .pseudoelem2,
+.genre:hover .pseudoelem2,
+.new-release:hover .pseudoelem2,
+.discover:hover .pseudoelem2{
+    display: block;
+
 }
