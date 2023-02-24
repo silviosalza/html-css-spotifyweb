@@ -37,13 +37,16 @@
                      <!--normal nav bar  -->
                 <img class="logo" src="./img/logo.svg" alt="">
                 <section class="nav-option flexcol">
-                    <div>
+                    <div class="relative home">
+                        <div class="pseudoelem"></div>
                         <a href=""><img src="./img/home.svg" alt=""><span>Home</span></a>
                     </div>
-                    <div>
+                    <div class="relative search">
+                        <div class="pseudoelem"></div>
                         <a href=""><img src="./img/search.svg" alt=""><span>Cerca</span></a>
                     </div>
-                    <div>
+                    <div class="relative library">
+                        <div class="pseudoelem"></div>
                         <a href=""><img src="./img/libreria.svg" alt=""><span>Libreria</span></a>
                     </div>
                 </section>
@@ -71,7 +74,9 @@
             <div class="main overflow">
                 <!-- header -->
                 <div class="header">
-                    <div class="flex-upgrade"><a class="upgrade" href="">EFFETTUA L'UPGRADE</a></div>
+                    <div class="flex-upgrade">
+                        <a class="upgrade" href="">EFFETTUA L'UPGRADE</a>
+                    </div>
                 </div>
                 <!-- /header -->
 
@@ -82,7 +87,7 @@
                 
                 <h2>Recently played</h2>
                 <div class="album-list">
-                    <div class="album">
+                    <div class="album relative">
                         <img src="./img/metal_lifting.jpg" alt="">
                         <div class="main-title">Heavy Metal</div>
                         <div class="subtitle">Subtitle</div>
@@ -127,11 +132,11 @@
 
                 <h2>Artisti più popolari</h2>
                 <div class="album-list artist">
-                    <div class="album">
+                    <div class="album artist">
                         <img src="./img/youg.jpeg" alt="">
                         <div class="main-title">Lana del Rey</div>
                     </div>
-                    <div class="album">
+                    <div class="album artist">
                         <img src="./img/einaudi.jpeg" alt="">
                         <div class="main-title">Ludovico Einaudi</div>
                     </div>
@@ -164,9 +169,9 @@
                         <i class="fa-solid fa-forward-step"></i>
                         <i class="fa-solid fa-rotate-right"></i>
                     </div>
-                    <div class="time-bar flex space-around">
+                    <div class="time-bar flex space-around relative">
                         <span id="real-time">1:11</span>
-                        <div class="time-white"></div><div class="time-grey"></div>
+                        <div class="time-white"></div><i class="fa-solid fa-circle circle-time"></i><div class="time-grey"></div>
                         <span id="total-time">4:25</span>
                     </div>
 
@@ -179,8 +184,8 @@
                         <i class="fa-solid fa-display"></i>
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
-                    <div class="volume-bar">
-                        <span class="vol-white "></span><span class="vol-grey"></span>
+                    <div class="volume-bar relative">
+                        <span class="vol-white"></span><i class="fa-solid fa-circle vol-circle"></i><span class="vol-grey"></span>
                     </div>
                 </div>
             </div>

@@ -205,6 +205,9 @@ a{
     width: calc(100% / 6);
     padding: 20px 10px 20px 0;
 }
+.artist img{
+    border-radius: 50%;
+}
 
 
 
@@ -428,8 +431,8 @@ a{
 }
 
 .nav-option a:hover{
-    border-left: #1DD760 solid 4px;
-    padding-left: 25px;
+    
+    
 }
 .time-bar:hover .circle-time,
 .volume-bar:hover .vol-circle{
@@ -437,3 +440,20 @@ a{
 }
 
 
+.pseudoelem{
+    position: absolute;
+    left: -15px;
+    bottom: 17px;
+    width: 4px;
+    height: 20px;
+    background-color: #1DD760;
+    display: inline-block;
+    vertical-align: middle;
+    display: none;
+}
+
+.home:hover .pseudoelem,
+.search:hover .pseudoelem,
+.library:hover .pseudoelem{
+    display: block;
+}
